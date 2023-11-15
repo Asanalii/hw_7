@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#2E335A">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weather"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingTop="30dp"
+        android:paddingHorizontal="15dp"/>
+
+    <com.example.life_cycle_view.view.WeatherView
+        android:id="@+id/weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:weather_country="Kazakhstan"
+        app:weather_city="Astana"
+        app:weather_precipitation="small_snow"
+        app:weather_time="night"
+        app:weather_temperature="23"
+        app:weather_wind="false" />
+
+
+
+    <com.example.life_cycle_view.view.WeatherView
+        android:id="@+id/weather2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:weather_country="Kazakhstan"
+        app:weather_city="Almaty"
+        app:weather_precipitation="mid_rain"
+        app:weather_time="day"
+        app:weather_temperature="20"
+        app:weather_wind="true" />
+
+    <com.example.life_cycle_view.view.WeatherView
+        android:id="@+id/weather3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:weather_country="Kazakhstan"
+        app:weather_city="Almaty"
+        app:weather_precipitation="heavy_rain"
+        app:weather_time="day"
+        app:weather_temperature="20"
+        app:weather_wind="false" />
+
+
+</LinearLayout>

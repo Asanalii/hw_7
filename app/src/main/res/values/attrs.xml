@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ToolbarView">
+
+        <attr name="toolbar_title" format="string"/>
+        <attr name="toolbar_favorite_visibility" format="boolean"/>
+        <attr name="toolbar_title_color" format="color"/>
+        <attr name="toolbar_back_color" format="color"/>
+        <attr name="toolbar_end_icon" format="reference"/>
+        <attr name="toolbar_style" format="enum">
+            <enum name="white" value="0"/>
+            <enum name="black" value="1"/>
+            <enum name="blue" value="2"/>
+            <enum name="red" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WeatherView">
+
+        <attr name="weather_temperature" format="integer"/>
+        <attr name="weather_country" format="string"/>
+        <attr name="weather_city" format="string"/>
+        <attr name="weather_time" format="enum">
+            <enum name="day" value="0"/>
+            <enum name="night" value="1"/>
+        </attr>
+
+        <attr name="weather_precipitation" format="enum">
+
+            <enum name="small_rain" value="0"/>
+            <enum name="mid_rain" value="1"/>
+            <enum name="heavy_rain" value="2"/>
+            <enum name="small_snow" value="3"/>
+            <enum name="mid_snow" value="4"/>
+            <enum name="heavy_snow" value="5"/>
+
+        </attr>
+
+        <attr name="weather_wind" format="boolean"/>
+
+
+    </declare-styleable>
+    
+    
+</resources>

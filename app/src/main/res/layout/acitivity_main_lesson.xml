@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+        <com.example.life_cycle_view.view.ToolbarView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:toolbar_title="New custom title"
+            app:toolbar_favorite_visibility="true"
+            app:toolbar_title_color="@color/blue"
+            app:toolbar_back_color="#ff3333"/>
+
+    <!--  <include layout="@layout/view_toolbar"-->
+    <!--      android:id="@+id/toolbar"-->
+    <!--      android:layout_height="wrap_content"-->
+    <!--      android:layout_width="match_parent"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#575757"
+        app:layout_constraintTop_toBottomOf="@id/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</LinearLayout>
